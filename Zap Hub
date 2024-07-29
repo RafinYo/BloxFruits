@@ -1,0 +1,30 @@
+-- complex obfuscated code
+local G = " function JQmj(NNhVr) ]'{GMDMhAr[%((>DDLT"
+
+local function zzCdGP(dfXvL)
+    local U = 0
+    local M = ""
+    for i = 1, #dfXvL do
+        local c = dfXvL:byte(i)
+        if c >= 97 and c <= 122 then
+            c = ((c - 123 + 13) % 26) + 97
+        elseif c >= 65 and c <= 90 then
+            c = ((c - 91 + 13) % 26) + 65
+        end
+        M = M .. string.char(c)
+        U = U + 1
+    end
+    return M
+end
+
+local nDLB = zzCdGP
+local OFDIOJOTV = nDLB(G)
+local loadstring = loadstring or load
+loadstring(OFDIOJOTV)()
+
+-- original code logic
+function JQmj(NNhVr)
+    print("Hello from obfuscated code!")
+end
+
+JQmj("test input")
