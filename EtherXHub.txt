@@ -1,6 +1,6 @@
 local Update = loadstring(Game:HttpGet"https://roblox.relzscript.xyz/source/relzhub/library/pc.lua")()
-local Alert = loadstring(Game:HttpGet"https://roblox.relzscript.xyz/source/relzhub/library/alert.lua")()
-local Library = Update:Window("EtherX")
+local Alert = loadstring(Game:HttpGet"https://raw.githubusercontent.com/RafinYo/BloxFruits/main/etherxhub.alert.lua?token=GHSAT0AAAAAACWXPPZVVVJ7NYQWGWKFGOHQZXBV42A")()
+local Library = Update:Window("BloxFruits")
 local Main = Library:Tab("Main","")
 local Set = Library:Tab("Setting","")
 local Hold = Library:Tab("Settings Skill","")
