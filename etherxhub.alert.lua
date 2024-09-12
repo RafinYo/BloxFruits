@@ -36,7 +36,7 @@ function Alert:create(desc)
     Image.BackgroundTransparency = 1.000
     Image.Position = UDim2.new(0, 8, 0, 8)
     Image.Size = UDim2.new(0, 45, 0, 45)
-    Image.Image = "rbxassetid://13940080072" 
+    Image.Image = "rbxassetid://137871105074430" 
     
     Title.Parent = Frame
     Title.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
