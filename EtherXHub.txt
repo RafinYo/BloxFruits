@@ -1,8 +1,16 @@
 local barOpen = true
+local yourUIFrame = Instance.new("Frame")
+yourUIFrame.Size = UDim2.new(0, 300, 0, 300)
+yourUIFrame.Position = UDim2.new(0.5, -150, 0.5, -150)
+yourUIFrame.BackgroundTransparency = 0.8
+yourUIFrame.BorderSizePixel = 0
+yourUIFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+yourUIFrame.Parent = game.Players.LocalPlayer.PlayerGui
+
 local barIcon = Instance.new("ImageButton")
 barIcon.Size = UDim2.new(0, 50, 0, 50)
-barIcon.Position = UDim2.new(0, 10, 0, 10) -- Adjust position as needed
-barIcon.Image = "rbxassetid://137871105074430"
+barIcon.Position = UDim2.new(0, 10, 0, 10)
+barIcon.Image = "rbxassetid://13787110507"
 barIcon.Parent = game.Players.LocalPlayer.PlayerGui
 
 barIcon.MouseButton1Click:Connect(function()
@@ -11,11 +19,8 @@ barIcon.MouseButton1Click:Connect(function()
 end)
 
 yourUIFrame.BackgroundTransparency = 0.8
-yourUIFrame.BorderSizePixel = 0 -- No borders
+yourUIFrame.BorderSizePixel = 0
 yourUIFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-
-yourTextLabel.TextTransparency = 0.3
-yourTextLabel.TextStrokeTransparency = 0.8
 
 while wait(0.5) do
 end
