@@ -1,26 +1,27 @@
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
 local barOpen = true
+
 local yourUIFrame = Instance.new("Frame")
 yourUIFrame.Size = UDim2.new(0, 300, 0, 300)
 yourUIFrame.Position = UDim2.new(0.5, -150, 0.5, -150)
 yourUIFrame.BackgroundTransparency = 0.8
 yourUIFrame.BorderSizePixel = 0
 yourUIFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-yourUIFrame.Parent = game.Players.LocalPlayer.PlayerGui
+yourUIFrame.Parent = playerGui
+yourUIFrame.Visible = true
 
 local barIcon = Instance.new("ImageButton")
 barIcon.Size = UDim2.new(0, 50, 0, 50)
 barIcon.Position = UDim2.new(0, 10, 0, 10)
-barIcon.Image = "rbxassetid://13787110507"
-barIcon.Parent = game.Players.LocalPlayer.PlayerGui
+barIcon.Image = "rbxassetid://137871105074430"
+barIcon.Parent = playerGui
 
 barIcon.MouseButton1Click:Connect(function()
     barOpen = not barOpen
     yourUIFrame.Visible = barOpen
 end)
-
-yourUIFrame.BackgroundTransparency = 0.8
-yourUIFrame.BorderSizePixel = 0
-yourUIFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 
 while wait(0.5) do
 end
