@@ -1,3 +1,24 @@
+local barOpen = true
+local barIcon = Instance.new("ImageButton")
+barIcon.Size = UDim2.new(0, 50, 0, 50)
+barIcon.Position = UDim2.new(0, 10, 0, 10) -- Adjust position as needed
+barIcon.Image = "rbxassetid://137871105074430"
+barIcon.Parent = game.Players.LocalPlayer.PlayerGui
+
+barIcon.MouseButton1Click:Connect(function()
+    barOpen = not barOpen
+    yourUIFrame.Visible = barOpen
+end)
+
+yourUIFrame.BackgroundTransparency = 0.8
+yourUIFrame.BorderSizePixel = 0 -- No borders
+yourUIFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+yourTextLabel.TextTransparency = 0.3
+yourTextLabel.TextStrokeTransparency = 0.8
+
+while wait(0.5) do
+end
 if game.PlaceId == 2753915549 then
     World1 = true
 elseif game.PlaceId == 4442272183 then
